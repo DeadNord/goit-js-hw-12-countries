@@ -1,5 +1,3 @@
-import './sass/main.scss'
-import './js/modual-1.js'
-import './js/fetchCountries.js'
-
-
+import './sass/main.scss';
+import './js/render.js';
+import './js/fetchCountries.js';
