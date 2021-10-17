@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/DeadNord/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://github.com/DeadNord/goit-js-hw-12-countries#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
@@ -53,7 +52,7 @@
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "url-loader": "^4.1.1",
-    "webpack": "^5.52.0",
+    "webpack": "^5.58.2",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.1",
     "webpack-merge": "^5.8.0",
