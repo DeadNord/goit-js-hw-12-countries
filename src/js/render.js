@@ -10,21 +10,18 @@ const debounce = require('lodash.debounce');
 const refsInput = document.querySelector('input');
 const refsRender = document.querySelector('.render');
 
-refsInput.addEventListener(
-  'input',
-  debounce(e => {
+refsInput.addEventListener('input', debounce(e => {
     if (e.target.value.length > 0) {
       fetchCountries(e.target.value)
         .then(renderCountry)
         .catch(onFetchError);
     }
-  }, 500),
-);
+  }, 500));
 
 function renderCountry(country) {
   if (country.length >= 2 && country.length <= 10) {
-    const markupList = listCountry(country);
-    refsRender.innerHTML = markupList;
+    const listMarkup = listCountry(country);
+    refsRender.innerHTML = listMarkup;
     const refsListCountry = document.querySelector('.country-list');
     refsListCountry.addEventListener('click', targetValue);
   } else if (country.length === 1) {
