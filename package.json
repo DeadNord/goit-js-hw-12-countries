@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://deadnord.github.io/goit-js-hw-12-countries/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "prod": "gh-pages -d dist",
-    "preprod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
     "preprod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    // "dev": "parcel src/*.html"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,7 @@
   },
   "author": "DeadNord",
   "license": "MIT",
+  "keywords": [],
   "bugs": {
     "url": "https://github.com/DeadNord/goit-js-hw-12-countries/issues"
   },
